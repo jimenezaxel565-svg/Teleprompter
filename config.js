@@ -6,8 +6,9 @@ const CONFIG = {
     // Espacio entre párrafos (en porcentaje de altura de pantalla)
     espaciadoParrafos: "10vh",
 
-    // Tamaño de letra principal
-    fontSizePrincipal: "32px",
+    // Tamaño de letra principal (medida relativa al ancho de pantalla + límites)
+    // En móviles típicos será ~18-20px, mucho más pequeño que los 32px originales.
+    fontSizePrincipal: "clamp(16px, 4.5vw, 28px)",
 
     // Punto de inicio (qué tan abajo empieza el texto)
     // Menos valor = empieza a subir más rápido
